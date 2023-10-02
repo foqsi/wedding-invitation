@@ -16,5 +16,5 @@ This website was hosted on a school server that I had access to at the time. In 
 ## Firebase rtdb
 ![rtdb](https://github.com/foqsi/wedding-invitation/assets/81455653/bb800a44-0ef6-49d3-9bdf-fdde53a786ae)
 
-## Google API showing location
+## Google API showing location and opened user's choice of map app on mobile devices
 ![googleapi](https://github.com/foqsi/wedding-invitation/assets/81455653/6f6da343-3e11-4cac-a38e-485c4f9310ab)
