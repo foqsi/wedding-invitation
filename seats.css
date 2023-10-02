@@ -1,0 +1,40 @@
+html,
+body {
+    background-image: url("images/seats-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    opacity: 0.9;
+}
+
+.table {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.7em;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,164 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #c9b0bf;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+#infoWindow {
+    color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cursive {
+    font-family: 'Great Vibes', cursive;
+    word-spacing: 6px;
+    font-size: 3em;
+}
+
+#text-div {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#photo-gallery {
+    position: relative;
+    width: 390px;
+    height: 600px;
+    margin: 20px auto;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s;
+    width: 100%;
+    position: absolute;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+#invitation-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 40px;
+    opacity: 80%;
+}
+
+#buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #f7f7f7;
+    border: none;
+    color: #be96ae;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button>a {
+    color: #be96ae;
+    text-decoration: none;
+}
+
+#find-seat {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid #be96ae;
+    height: 40px;
+    width: 95%;
+}
+
+#find-seat-button {
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Map Styles */
+div#displayMap {
+    width: 90%;
+    height: 280px;
+    margin: 20px auto;
+    border: 3px solid gray;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.7em;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 390px) {
+    footer {
+        margin-bottom: 40px;
+    }
+}
+
+#totalGuests {
+    display: none;
+}
+
+.f-input-group {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+.f-input-group label {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.f-input-group input:focus~label,
+.f-input-group input:valid~label {
+    top: -5px;
+    font-size: 14px;
+    color: #ff50f6;
+}
+
+.f-input-group input {
+    width: 320px;
+    height: 40px;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}

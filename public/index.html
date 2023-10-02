@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Edward Davis">
+    <meta name="description" content="Loc Duyen Wedding">
+    <meta name="date" content="7/23/2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://i.imgur.com/C4EchBl.jpg">
+
+    <title>Loc & Duyen's Wedding</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <!-- Add Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBeOvc5dgdGlsSyoTUNjciEHBNRz5vTKZI",
+            authDomain: "wedding-page-4e645.firebaseapp.com",
+            databaseURL: "https://wedding-page-4e645-default-rtdb.firebaseio.com",
+            projectId: "wedding-page-4e645",
+            storageBucket: "wedding-page-4e645.appspot.com",
+            messagingSenderId: "945902120520",
+            appId: "1:945902120520:web:2c5a463fb04599ca45727d",
+            measurementId: "G-Q8TDNJG9S2"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+        const analytics = firebase.analytics();
+    </script>
+
+
+    <script src="../script.js" defer></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBao-_6NPYaH4541hfV5-xlkRkBJ8PkQY0&callback=initMap"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+    <img src="../images/flower-background.png" alt="Flower Background" id="flower-background" width="390px"
+        height="auto">
+    <div id="wrapper">
+
+        <main>
+            <div id="text-div">
+                <h2>Invitation to</h2><br>
+                <h1 class="cursive" id="main-text">Loc & Duyen Nguyễn's Wedding</h1>
+            </div>
+            <div id="static-photo">
+                <img src="../images/001-002.jpg" alt="Loc & Duyen" width="390px" height="auto">
+            </div><br>
+            <h4 id="text-div">Photo Gallery</h4>
+            <div id="photo-gallery">
+                <img class="slide active" src="../images/slide1.jpg" alt="Photo 1">
+                <!-- <img class="slide" src="../images/slide2.jpg" alt="Photo 2"> -->
+                <img class="slide" src="../images/slide3.jpg" alt="Photo 3">
+                <img class="slide" src="../images/slide4.jpg" alt="Photo 4">
+                <img class="slide" src="../images/slide5.jpg" alt="Photo 5">
+                <img class="slide" src="../images/slide6.jpg" alt="Photo 6">
+                <img class="slide" src="../images/slide7.jpg" alt="Photo 7">
+
+            </div>
+
+
+            <div id="invitation-images">
+                <img src="../images/page1.png" alt="Invitation Page 1" width="390px" height="auto">
+                <img src="../images/page2.png" alt="Invitation Page 2" width="390px" height="auto">
+            </div>
+
+            <!-- <div id="find-seat">
+                <button id="find-seat-button"><a href="">Find Your Seat</a></button>
+            </div> -->
+
+            <div id="text-div">
+                <h2>Will you be there?</h2>
+                <form>
+                    <div class="f-input-group">
+                        <input type="text" id="name" required>
+                        <label for="">Your Name</label>
+                    </div>
+                    <div class="f-input-group">
+                        <input type="text" id="guests" required>
+                        <label for="">Number of Your Guests</label>
+                    </div>
+                </form>
+
+                <div id="buttons">
+                    <button id="submit">Submit</button>
+                    <button id="reset">Reset</button>
+                </div>
+                <div id="totalGuests"></div>
+
+
+                <!-- MAP -->
+                <article id="setup">
+                    <div id="displayMap"></div>
+                    <div id="buttons">
+                        <button>
+                            <a href="bingmaps:?cp=35.49665~-97.53472"></a>
+                            <a href="http://maps.apple.com/maps?q=35.49665, -97.53472">Open Maps</a>
+                        </button>
+                    </div>
+                </article>
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
+</body>
+
+</html>
